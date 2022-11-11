@@ -1,3 +1,15 @@
+'''
+Description of Tower of Hanoi
+
+Tower of Hanoi is a mathematical game, which has three rules.
+All the disks have different sizes.
+
+The goal is to move all the disks from on tower (rod) to another one with the following 3 rules.
+
+    You can only move one disk at the time.
+    You can only take the top disk and place on top of another tower (rod).
+    You cannot place a bigger disk on top of a smaller disk.
+'''
 def move(towers , from_tower_no , dest_tower_no):
     disc = towers[from_tower_no].pop()
     towers[dest_tower_no].append(disc)
